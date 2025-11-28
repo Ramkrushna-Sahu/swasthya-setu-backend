@@ -1,0 +1,80 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
+
+# ---- Virtual Environment ----
+venv/
+.env/
+ENV/
+env/
+.venv/
+
+# ---- Environment Variables ----
+*.env
+.env.*
+!.env.example  # keep example env file
+
+# ---- VSCode ----
+.vscode/
+.code-workspace
+
+# ---- PyCharm ----
+.idea/
+*.iml
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Byte-compiled / Cached ----
+*.sqlite3
+*.db
+
+# ---- Cache ----
+*.cache/
+.cache/
+pytest_cache/
+__pycache__/
+*.pyc
+
+# ---- OS Generated ----
+.DS_Store
+Thumbs.db
+
+# ---- Migrations (Optional, if using Alembic) ----
+migrations/
+alembic/
+alembic.ini
+
+# ---- Coverage ----
+.coverage
+htmlcov/
+.coverage.*
+
+# ---- MyPy / Type Checking ----
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ---- Pydantic ----
+*.schema.json
+
+# ---- Jupyter (if used) ----
+.ipynb_checkpoints
+
+# ---- FastAPI Static Files (if generated) ----
+static/
+media/
+uploads/
+
