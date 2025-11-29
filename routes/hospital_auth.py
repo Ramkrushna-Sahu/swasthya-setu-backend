@@ -11,6 +11,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 @router.post("/register")
 async def register_hospital(data: HospitalRegister):
     # 1. Check duplicate
+    print(data)
     if await db.hospitals.find_one({"hospital_code": data.hospital_code.upper()}):
         raise HTTPException(
             status_code=400,
@@ -27,7 +28,7 @@ async def register_hospital(data: HospitalRegister):
         "location": data.location or "Not provided",
         "created_at": datetime.utcnow()
     })
-
+    print(hospital_result)
     hospital_id_str = str(hospital_result.inserted_id)  # ← Convert immediately
 
     # 4. Create admin user
